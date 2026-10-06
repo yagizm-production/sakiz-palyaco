@@ -8,18 +8,52 @@ menu.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => menu.classList.remove("open"));
 });
 
+const shots = [...document.querySelectorAll("[data-gallery]")].filter((node, index, list) => {
+  return list.findIndex((item) => item.dataset.full === node.dataset.full) === index;
+});
 const dialog = document.querySelector("#lightbox");
 const dialogImg = dialog.querySelector("img");
-document.querySelectorAll(".gallery button").forEach((button) => {
+const caption = dialog.querySelector(".caption");
+const count = dialog.querySelector(".count");
+let current = 0;
+
+function show(index, direction) {
+  current = (index + shots.length) % shots.length;
+  const shot = shots[current];
+  dialogImg.className = direction === "prev" ? "from-left" : "from-right";
+  dialogImg.src = shot.dataset.full;
+  dialogImg.alt = shot.dataset.caption || shot.querySelector("img")?.alt || "";
+  caption.textContent = dialogImg.alt;
+  count.textContent = `${current + 1} / ${shots.length}`;
+  if (!dialog.open) dialog.showModal();
+}
+
+document.querySelectorAll("[data-gallery]").forEach((button) => {
   button.addEventListener("click", () => {
-    dialogImg.src = button.dataset.full;
-    dialogImg.alt = button.querySelector("img").alt;
-    dialog.showModal();
+    const index = shots.findIndex((shot) => shot.dataset.full === button.dataset.full);
+    show(index, "next");
   });
 });
 dialog.querySelector(".close").addEventListener("click", () => dialog.close());
+dialog.querySelector(".prev").addEventListener("click", () => show(current - 1, "prev"));
+dialog.querySelector(".next").addEventListener("click", () => show(current + 1, "next"));
 dialog.addEventListener("click", (event) => {
   if (event.target === dialog) dialog.close();
+});
+document.addEventListener("keydown", (event) => {
+  if (!dialog.open) return;
+  if (event.key === "ArrowRight") show(current + 1, "next");
+  if (event.key === "ArrowLeft") show(current - 1, "prev");
+});
+
+let touchX = 0;
+dialog.addEventListener("touchstart", (event) => {
+  touchX = event.changedTouches[0].clientX;
+}, { passive: true });
+dialog.addEventListener("touchend", (event) => {
+  const delta = event.changedTouches[0].clientX - touchX;
+  if (Math.abs(delta) < 40) return;
+  show(current + (delta < 0 ? 1 : -1), delta < 0 ? "next" : "prev");
 });
 
 document.querySelector("#talep").addEventListener("submit", (event) => {
@@ -28,6 +62,7 @@ document.querySelector("#talep").addEventListener("submit", (event) => {
   const text = [
     "Merhaba, etkinlik için bilgi almak istiyorum.",
     `Ad: ${data.get("ad") || "-"}`,
+    `Paket: ${data.get("paket") || "-"}`,
     `Etkinlik: ${data.get("tur") || "-"}`,
     `Tarih: ${data.get("tarih") || "belirtilmedi"}`,
     `Not: ${data.get("not") || "-"}`
