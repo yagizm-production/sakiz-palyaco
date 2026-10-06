@@ -238,7 +238,8 @@ td:last-child, th:last-child { text-align: right; font-weight: 700; color: var(-
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 .gallery button:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-.gallery img { width: 100%; height: 100%; object-fit: contain; }
+.gallery button { padding: 0; }
+.gallery img, .services img, .hero-card img, .portrait img { object-fit: cover; object-position: center; }
 
 .about {
   display: grid;
