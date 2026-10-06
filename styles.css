@@ -131,7 +131,7 @@ h3 { font-size: 26px; margin: 0 0 8px; }
   transition: transform 0.25s ease;
 }
 .hero-card:hover { transform: translateY(-4px) rotate(-0.4deg); }
-.hero-card img { width: 100%; height: 560px; object-fit: cover; object-position: center 28%; }
+.hero-card img { width: 100%; height: 520px; object-fit: contain; background: rgba(255, 248, 236, 0.8); }
 
 .strip {
   display: flex;
@@ -175,7 +175,12 @@ h3 { font-size: 26px; margin: 0 0 8px; }
   border-radius: 18px;
   overflow: hidden;
 }
-.services img { width: 148px; height: 148px; object-fit: cover; border-radius: 18px; }
+.services img, .hero-card img, .portrait img { width: 100%; height: 100%; object-fit: contain; background: rgba(255, 248, 236, 0.8); }
+.services button { width: 148px; height: 148px; background: rgba(255, 248, 236, 0.8); }
+.hero-card { display: grid; place-items: center; background: rgba(255, 248, 236, 0.72); }
+.hero-card img { height: 520px; }
+.portrait { background: rgba(255, 248, 236, 0.72); display: grid; place-items: center; }
+.portrait img { height: 520px; }
 .services div { padding: 8px 4px; }
 .services p, .packages li { color: var(--muted); }
 
@@ -221,13 +226,17 @@ td:last-child, th:last-child { text-align: right; font-weight: 700; color: var(-
   gap: 12px;
 }
 .gallery button {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 248, 236, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.75);
   box-shadow: 0 10px 24px rgba(194, 72, 120, 0.08);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  padding: 8px;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
-.gallery button:hover { transform: translateY(-5px) rotate(-1deg); box-shadow: var(--shadow); }
-.gallery img { width: 100%; height: 148px; object-fit: cover; }
+.gallery button:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.gallery img { width: 100%; height: 100%; object-fit: contain; }
 
 .about {
   display: grid;
@@ -236,7 +245,7 @@ td:last-child, th:last-child { text-align: right; font-weight: 700; color: var(-
   align-items: center;
 }
 .portrait { border-radius: 28px; box-shadow: var(--shadow); }
-.portrait img { width: 100%; height: 520px; object-fit: cover; object-position: center top; }
+.portrait img { width: 100%; height: 520px; object-fit: contain; background: rgba(255, 248, 236, 0.72); }
 .about-copy { border-radius: 28px; padding: 28px; }
 .text-link { color: var(--pink-deep); font-weight: 800; }
 
