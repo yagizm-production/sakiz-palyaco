@@ -3,12 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sakız Palyaço | Doğum Günü ve Etkinlik Organizasyonu</title>
-  <meta name="description" content="Sakız Palyaço; doğum günü, okul etkinliği, açılış ve özel günler için palyaço, kostümlü karakter, balon süsleme ve ikram organizasyonu.">
-  <meta property="og:title" content="Sakız Palyaço">
-  <meta property="og:description" content="Çocukların en neşeli günü için organizasyon, süsleme ve eğlence.">
-  <meta property="og:image" content="assets/hero.jpg">
-  <meta property="og:type" content="website">
+  <title>Sakız Palyaço | Hakkımızda</title>
+  <meta name="description" content="Sakız Palyaço; çocuk etkinliği, palyaço, kostümlü karakter, balon süsleme ve ikram organizasyonu.">
   <link rel="icon" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,283 +14,60 @@
 <body>
   <div class="wash" aria-hidden="true"></div>
   <header class="nav" id="nav">
-    <a class="brand" href="#ust">
-      <img src="assets/logo.png" alt="Sakız Palyaço">
-    </a>
+    <a class="brand" href="/"><img src="assets/logo.png" alt="Sakız Palyaço"></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menü</button>
     <nav id="menu">
-      <a href="#hizmetler">Hizmetler</a>
-      <a href="#paketler">Paketler</a>
-      <a href="#galeri">Galeri</a>
-      <a href="#hakkimizda">Hakkımızda</a>
-      <a href="#iletisim">İletişim</a>
+      <a class="active" href="/">Ana</a>
+      <a href="/hizmetler">Hizmetler</a>
+      <a href="/fiyatlar">Fiyatlar</a>
+      <a href="/galeri">Galeri</a>
+      <a href="/iletisim">İletişim</a>
       <a class="nav-cta" href="https://wa.me/905078378704" target="_blank" rel="noopener">WhatsApp</a>
     </nav>
   </header>
+  <nav class="tabs" aria-label="Sekmeler">
+    <a class="active" href="/">Ana</a>
+    <a href="/hizmetler">Hizmetler</a>
+    <a href="/fiyatlar">Fiyatlar</a>
+    <a href="/galeri">Galeri</a>
+    <a href="/iletisim">İletişim</a>
+  </nav>
 
-  <main id="ust">
-    <section class="hero">
-      <div class="hero-copy glass">
-        <p class="eyebrow">Organizasyon · Eğlence · Süsleme</p>
-        <h1>Çocukların en neşeli günü, baştan sona hazır.</h1>
-        <p class="lead">Doğum günü, okul etkinliği, açılış ve özel günler için palyaço, kostümlü karakter, balon süsleme ve ikram. Tarih ve konsept için yazmanız yeterli.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#paketler">Paketlere bakın</a>
-          <a class="btn btn-ghost" href="#galeri">İşlere bakın</a>
-        </div>
-        <ul class="stats">
-          <li><strong>Palyaço</strong><span>Gösteri ve karşılama</span></li>
-          <li><strong>Karakter</strong><span>Kostümlü misafirler</span></li>
-          <li><strong>Balon</strong><span>Buket, kemer, heykel</span></li>
-        </ul>
-      </div>
-      <button class="hero-card" type="button" data-gallery data-full="assets/hero.jpg" data-caption="Süslü salonda palyaço ve kostümlü karakter">
-        <img src="assets/hero.jpg" alt="Süslü salonda palyaço ve kostümlü karakter">
-      </button>
-    </section>
-
-    <section class="strip" aria-label="Hizmet özeti">
-      <p>Doğum günü</p>
-      <p>Balon süsleme</p>
-      <p>Pamuk şeker</p>
-      <p>Patlamış mısır</p>
-      <p>Yüz boyama</p>
-      <p>Açılış</p>
-      <p>Okul etkinliği</p>
-      <p>Baby shower</p>
-    </section>
-
-    <section class="section" id="hizmetler">
-      <div class="section-head">
-        <p class="eyebrow">Ne yapıyoruz</p>
-        <h2>Etkinliğin eğlencesi ve görüntüsü aynı ekipte.</h2>
-        <p>Süsleme, gösteri ve ikramı ayrı ayrı aramanıza gerek kalmaz. Konsepti birlikte netleştirir, günün akışını buna göre kurarız.</p>
-      </div>
-      <div class="services">
-        <article class="glass">
-          <button type="button" data-gallery data-full="assets/galeri-maskot.jpg" data-caption="Kostümlü karakterler ve palyaço">
-            <img src="assets/galeri-maskot.jpg" alt="Kostümlü karakterler ve palyaço">
-          </button>
-          <div>
-            <h3>Palyaço ve karakterler</h3>
-            <p>Karşılama, oyun, yüz boyama ve sihir. Doğum gününe, okul şenliğine ve açılışa uygun kostümlü karakterler.</p>
-          </div>
-        </article>
-        <article class="glass">
-          <button type="button" data-gallery data-full="assets/galeri-buket.jpg" data-caption="Kişiye özel balon buketi">
-            <img src="assets/galeri-buket.jpg" alt="Balon buketi">
-          </button>
-          <div>
-            <h3>Balon süsleme</h3>
-            <p>Buket, kemer, sütun ve balon heykeli. Mekâna ve yaşa göre renk; kapıdan pastaya kadar tek görüntü.</p>
-          </div>
-        </article>
-        <article class="glass">
-          <button type="button" data-gallery data-full="assets/hizmet-pamuk.jpg" data-caption="Pamuk şeker standı">
-            <img src="assets/hizmet-pamuk.jpg" alt="Pamuk şeker">
-          </button>
-          <div>
-            <h3>İkram standı</h3>
-            <p>Pamuk şeker, patlamış mısır ve elma şekeri. Gösterinin yanında çocukların sıraya girdiği lezzet köşesi.</p>
-          </div>
-        </article>
-        <article class="glass">
-          <button type="button" data-gallery data-full="assets/galeri-acilis.jpg" data-caption="Balon kemerli açılış süslemesi">
-            <img src="assets/galeri-acilis.jpg" alt="Balon kemerli açılış süslemesi">
-          </button>
-          <div>
-            <h3>Özel gün ve kurum</h3>
-            <p>Açılış, baby shower, sünnet ve okul etkinliği. Kalabalık karşılama için gösteri ve süsleme birlikte planlanır.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="paketler">
-      <div class="section-head">
-        <p class="eyebrow">Paketler</p>
-        <h2>Günü parçalara bölmeden seçin.</h2>
-        <p>Paketler WhatsApp konuşmasındaki tutarlardan alındı. Afişteki rakamlar aynı konuşmada hatalı denmiş, siteye yazılmadı.</p>
-      </div>
-      <div class="packages">
-        <article class="glass">
-          <p class="tag">1 animator</p>
-          <h3>Standart</h3>
-          <p class="price">4.000 TL</p>
-          <ul>
-            <li>Palyaço, Spider-Man, Batman veya Pamuk Prenses</li>
-            <li>Kuşadası içi 4.000 TL</li>
-            <li>Söke, Selçuk, Kirazlı, Soğucak 4.500 TL</li>
-            <li>2. animator +3.000 TL, 3. animator +2.500 TL</li>
-          </ul>
-          <a class="btn btn-primary" href="https://wa.me/905078378704?text=Merhaba%2C%20standart%20animator%20paketi%20i%C3%A7in%20yaz%C4%B1yorum." target="_blank" rel="noopener">Bu paketi sorun</a>
-        </article>
-        <article class="glass featured">
-          <p class="tag">Karakter</p>
-          <h3>Maskot</h3>
-          <p class="price">3.800 TL</p>
-          <ul>
-            <li>Maskot karakter</li>
-            <li>2. karakter 3.000 TL</li>
-            <li>Karşılama ve fotoğraf</li>
-            <li>Palyaço paketine eklenebilir</li>
-          </ul>
-          <a class="btn btn-primary" href="https://wa.me/905078378704?text=Merhaba%2C%20maskot%20karakter%20i%C3%A7in%20yaz%C4%B1yorum." target="_blank" rel="noopener">Bu paketi sorun</a>
-        </article>
-        <article class="glass">
-          <p class="tag">Karşılama</p>
-          <h3>Balon kortej</h3>
-          <p class="price">10.000 TL</p>
-          <ul>
-            <li>3 kişi karşılama ekibi 10.000 TL</li>
-            <li>5 kişi karşılama ekibi 15.000 TL</li>
-            <li>Balonlu yürüyüş ve karşılama</li>
-            <li>Açılış ve özel gün</li>
-          </ul>
-          <a class="btn btn-primary" href="https://wa.me/905078378704?text=Merhaba%2C%20balon%20kortej%20i%C3%A7in%20yaz%C4%B1yorum." target="_blank" rel="noopener">Bu paketi sorun</a>
-        </article>
-        <article class="glass">
-          <p class="tag">Ek hizmet</p>
-          <h3>İkram ve show</h3>
-          <p class="price">Ayrıca</p>
-          <ul>
-            <li>Pamuk şeker, patlamış mısır, elma şekeri</li>
-            <li>Bubble show</li>
-            <li>Balon kemer, heykel, buket</li>
-            <li>Bu kalemlerin afiş tutarı konuşmada hatalı denmiş</li>
-          </ul>
-          <a class="btn btn-primary" href="https://wa.me/905078378704?text=Merhaba%2C%20ikram%20ve%20show%20i%C3%A7in%20yaz%C4%B1yorum." target="_blank" rel="noopener">Bu paketi sorun</a>
-        </article>
-      </div>
-
-      <div class="price-wrap glass">
-        <div>
-          <p class="eyebrow">Fiyat listesi</p>
-          <h3>Konuşmadaki liste.</h3>
-          <p>Afişte pamuk şeker, mısır ve birleşik paket tutarları da var. Aynı yazışmada bunların çoğu hatalı denmiş; aşağıdaki tablo yalnızca mesajda netleşen rakamlar.</p>
-        </div>
-        <table>
-          <thead>
-            <tr><th>Hizmet</th><th>Kapsam</th><th>Ücret</th></tr>
-          </thead>
-          <tbody>
-            <tr><td data-label="Hizmet">1 animator</td><td data-label="Kapsam">Palyaço, Spider-Man, Batman veya Pamuk Prenses</td><td data-label="Ücret">4.000 TL</td></tr>
-            <tr><td data-label="Hizmet">Aynı paket, çevre</td><td data-label="Kapsam">Söke, Selçuk, Kirazlı, Soğucak</td><td data-label="Ücret">4.500 TL</td></tr>
-            <tr><td data-label="Hizmet">2. animator</td><td data-label="Kapsam">Aynı seçenekler</td><td data-label="Ücret">+3.000 TL</td></tr>
-            <tr><td data-label="Hizmet">3. animator</td><td data-label="Kapsam">Aynı seçenekler</td><td data-label="Ücret">+2.500 TL</td></tr>
-            <tr><td data-label="Hizmet">Maskot karakter</td><td data-label="Kapsam">Tek karakter</td><td data-label="Ücret">3.800 TL</td></tr>
-            <tr><td data-label="Hizmet">2. karakter</td><td data-label="Kapsam">Ek maskot</td><td data-label="Ücret">3.000 TL</td></tr>
-            <tr><td data-label="Hizmet">Balon kortej</td><td data-label="Kapsam">3 kişi karşılama</td><td data-label="Ücret">10.000 TL</td></tr>
-            <tr><td data-label="Hizmet">Balon kortej</td><td data-label="Kapsam">5 kişi karşılama</td><td data-label="Ücret">15.000 TL</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section gallery-section" id="galeri">
-      <div class="section-head">
-        <p class="eyebrow">Galeri</p>
-        <h2>Sahadan kareler.</h2>
-        <p>Küçük karta tıklayın. Açılan görüntüde oklarla, klavyeyle veya kaydırarak gezin.</p>
-      </div>
-      <div class="gallery">
-        <button type="button" data-gallery data-full="assets/hero.jpg" data-caption="Salon süslemesi ve karakterler"><img src="assets/hero.jpg" alt="Salon süslemesi ve karakterler"></button>
-        <button type="button" data-gallery data-full="assets/galeri-gosteri.jpg" data-caption="Palyaço gösterisi"><img src="assets/galeri-gosteri.jpg" alt="Palyaço gösterisi"></button>
-        <button type="button" data-gallery data-full="assets/portre.jpg" data-caption="Sakız Palyaço"><img src="assets/portre.jpg" alt="Sakız Palyaço"></button>
-        <button type="button" data-gallery data-full="assets/galeri-maskot.jpg" data-caption="Maskot ve palyaço"><img src="assets/galeri-maskot.jpg" alt="Maskot ve palyaço"></button>
-        <button type="button" data-gallery data-full="assets/galeri-acik-hava.jpg" data-caption="Açık hava karakter karşılama"><img src="assets/galeri-acik-hava.jpg" alt="Açık hava karakter karşılama"></button>
-        <button type="button" data-gallery data-full="assets/galeri-karakter.jpg" data-caption="Balonlar ve kostümlü karakter"><img src="assets/galeri-karakter.jpg" alt="Balonlar ve kostümlü karakter"></button>
-        <button type="button" data-gallery data-full="assets/galeri-acilis.jpg" data-caption="Kırmızı balon kemer"><img src="assets/galeri-acilis.jpg" alt="Kırmızı balon kemer"></button>
-        <button type="button" data-gallery data-full="assets/galeri-buket.jpg" data-caption="Kişiye özel balon buketi"><img src="assets/galeri-buket.jpg" alt="Kişiye özel balon buketi"></button>
-        <button type="button" data-gallery data-full="assets/galeri-balon-heykel.jpg" data-caption="Balon heykeli ve palyaço"><img src="assets/galeri-balon-heykel.jpg" alt="Balon heykeli ve palyaço"></button>
-        <button type="button" data-gallery data-full="assets/hizmet-pamuk.jpg" data-caption="Pamuk şeker makinesi"><img src="assets/hizmet-pamuk.jpg" alt="Pamuk şeker makinesi"></button>
-        <button type="button" data-gallery data-full="assets/hizmet-pamuk-2.jpg" data-caption="Pamuk şeker hazırlığı"><img src="assets/hizmet-pamuk-2.jpg" alt="Pamuk şeker hazırlığı"></button>
-        <button type="button" data-gallery data-full="assets/hizmet-elma.jpg" data-caption="Elma şekeri"><img src="assets/hizmet-elma.jpg" alt="Elma şekeri"></button>
-        <button type="button" data-gallery data-full="assets/hizmet-misir.jpg" data-caption="Patlamış mısır standı"><img src="assets/hizmet-misir.jpg" alt="Patlamış mısır standı"></button>
-      </div>
-    </section>
-
-    <section class="section about" id="hakkimizda">
+  <main class="home">
+    <img class="home-logo" src="assets/logo.png" alt="Sakız Palyaço">
+    <section class="about" id="hakkimizda">
       <button class="portrait" type="button" data-gallery data-full="assets/portre.jpg" data-caption="Sakız Palyaço">
         <img src="assets/portre.jpg" alt="Sakız Palyaço portre">
       </button>
       <div class="glass about-copy">
         <p class="eyebrow">Hakkımızda</p>
-        <h2>Günün temposunu bilen bir ekip.</h2>
+        <h1>Günün temposunu bilen bir ekip.</h1>
         <p>Sakız Palyaço, çocuk etkinliğini süslemeden gösteriye, ikramdan karşılamaya kadar tek elde toplar. Amaç kalabalık bir program listesi değil; çocuğun sıkılmadığı, ailenin de takip edebildiği bir akış.</p>
         <p>Palyaço gösterisi, yüz boyama, sihir, kostümlü karakter, balon süsleme ve ikram standı aynı güne göre birleştirilebilir. Palyaço eğitimi için de ayrıca yazabilirsiniz.</p>
         <a class="text-link" href="https://www.instagram.com/sakizpalyaco/" target="_blank" rel="noopener">Instagram’da güncel işler</a>
       </div>
     </section>
-
-    <section class="section contact" id="iletisim">
-      <div>
-        <p class="eyebrow">İletişim</p>
-        <h2>Tarihi yazın, programı konuşalım.</h2>
-        <p>Etkinlik türü, çocuk sayısı ve istediğiniz paket yeterli. Uygunluk ve ücret WhatsApp üzerinden netleşir.</p>
-        <ul class="contact-list">
-          <li><span>Telefon</span><a href="tel:+905078378704">0507 837 87 04</a></li>
-          <li><span>WhatsApp</span><a href="https://wa.me/905078378704" target="_blank" rel="noopener">Mesaj gönder</a></li>
-          <li><span>Instagram</span><a href="https://www.instagram.com/sakizpalyaco/" target="_blank" rel="noopener">@sakizpalyaco</a></li>
-        </ul>
-      </div>
-      <form id="talep" class="card glass">
-        <label>Adınız<input name="ad" required placeholder="Ad Soyad"></label>
-        <label>Paket
-          <select name="paket">
-            <option value="">Seçin</option>
-            <option>Standart animator</option>
-            <option>Maskot</option>
-            <option>Balon kortej</option>
-            <option>İkram / show</option>
-            <option>Karışık / özel</option>
-          </select>
-        </label>
-        <label>Etkinlik
-          <select name="tur" required>
-            <option value="">Seçin</option>
-            <option>Doğum günü</option>
-            <option>Okul / kreş etkinliği</option>
-            <option>Açılış</option>
-            <option>Baby shower</option>
-            <option>Sünnet</option>
-            <option>Palyaço eğitimi</option>
-            <option>Diğer</option>
-          </select>
-        </label>
-        <label>Tarih<input name="tarih" type="date"></label>
-        <label>Not<textarea name="not" rows="4" placeholder="Çocuk sayısı, mekan, istediğiniz hizmetler"></textarea></label>
-        <button class="btn btn-primary" type="submit">WhatsApp’ta gönder</button>
-      </form>
-    </section>
   </main>
-
-  <nav class="dock" aria-label="Mobil menü">
-    <a href="#hizmetler">Hizmet</a>
-    <a href="#paketler">Paket</a>
-    <a href="#galeri">Galeri</a>
-    <a href="#iletisim">İletişim</a>
-    <a class="dock-wa" href="https://wa.me/905078378704" target="_blank" rel="noopener">WhatsApp</a>
-  </nav>
 
   <footer>
     <img src="assets/logo.png" alt="">
     <p>Sakız Palyaço · Çocuk etkinliği ve organizasyon</p>
     <a href="tel:+905078378704">0507 837 87 04</a>
   </footer>
-
-  <dialog id="lightbox" aria-label="Galeri">
+  <nav class="dock" aria-label="Mobil sekmeler">
+    <a class="active" href="/">Ana</a>
+    <a href="/hizmetler">Hizmet</a>
+    <a href="/fiyatlar">Fiyat</a>
+    <a href="/galeri">Galeri</a>
+    <a href="/iletisim">İletişim</a>
+  </nav>
+  <dialog id="lightbox" aria-label="Görsel">
     <div class="viewer">
       <button type="button" class="close" aria-label="Kapat">Kapat</button>
       <button type="button" class="nav-shot prev" aria-label="Önceki">Önceki</button>
       <button type="button" class="nav-shot next" aria-label="Sonraki">Sonraki</button>
-      <div class="stage">
-        <img alt="">
-      </div>
-      <div class="viewer-meta">
-        <p class="caption"></p>
-        <p class="count"></p>
-      </div>
+      <div class="stage"><img alt=""></div>
+      <div class="viewer-meta"><p class="caption"></p><p class="count"></p></div>
     </div>
   </dialog>
   <script src="main.js"></script>

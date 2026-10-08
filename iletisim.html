@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sakız Palyaço | İletişim</title>
+  <meta name="description" content="Sakız Palyaço iletişim: 0507 837 87 04 ve Instagram.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@560;700;800&family=Outfit:wght@360;480;580;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wash" aria-hidden="true"></div>
+  <header class="nav" id="nav">
+    <a class="brand" href="/"><img src="assets/logo.png" alt="Sakız Palyaço"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menü</button>
+    <nav id="menu">
+      <a href="/">Ana</a>
+      <a href="/hizmetler">Hizmetler</a>
+      <a href="/fiyatlar">Fiyatlar</a>
+      <a href="/galeri">Galeri</a>
+      <a class="active" href="/iletisim">İletişim</a>
+      <a class="nav-cta" href="https://wa.me/905078378704" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </header>
+  <nav class="tabs" aria-label="Sekmeler">
+    <a href="/">Ana</a>
+    <a href="/hizmetler">Hizmetler</a>
+    <a href="/fiyatlar">Fiyatlar</a>
+    <a href="/galeri">Galeri</a>
+    <a class="active" href="/iletisim">İletişim</a>
+  </nav>
+  <main>
+    <section class="section contact">
+      <div>
+        <p class="eyebrow">İletişim</p>
+        <h1>Tarihi yazın, programı konuşalım.</h1>
+        <p>Etkinlik türü, çocuk sayısı ve istediğiniz paket yeterli. Uygunluk ve ücret WhatsApp üzerinden netleşir.</p>
+        <ul class="contact-list">
+          <li><span>Telefon</span><a href="tel:+905078378704">0507 837 87 04</a></li>
+          <li><span>WhatsApp</span><a href="https://wa.me/905078378704" target="_blank" rel="noopener">Mesaj gönder</a></li>
+          <li><span>Instagram</span><a href="https://www.instagram.com/sakizpalyaco/" target="_blank" rel="noopener">@sakizpalyaco</a></li>
+        </ul>
+      </div>
+      <form id="talep" class="card glass">
+        <label>Adınız<input name="ad" required placeholder="Ad Soyad"></label>
+        <label>Paket
+          <select name="paket">
+            <option value="">Seçin</option>
+            <option>Standart animator</option>
+            <option>Maskot</option>
+            <option>Balon kortej</option>
+            <option>İkram / show</option>
+            <option>Karışık / özel</option>
+          </select>
+        </label>
+        <label>Etkinlik
+          <select name="tur" required>
+            <option value="">Seçin</option>
+            <option>Doğum günü</option>
+            <option>Okul / kreş etkinliği</option>
+            <option>Açılış</option>
+            <option>Baby shower</option>
+            <option>Sünnet</option>
+            <option>Palyaço eğitimi</option>
+            <option>Diğer</option>
+          </select>
+        </label>
+        <label>Tarih<input name="tarih" type="date"></label>
+        <label>Not<textarea name="not" rows="4" placeholder="Çocuk sayısı, mekan, istediğiniz hizmetler"></textarea></label>
+        <button class="btn btn-primary" type="submit">WhatsApp’ta gönder</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <img src="assets/logo.png" alt="">
+    <p>Sakız Palyaço · Çocuk etkinliği ve organizasyon</p>
+    <a href="tel:+905078378704">0507 837 87 04</a>
+  </footer>
+  <nav class="dock" aria-label="Mobil sekmeler">
+    <a href="/">Ana</a>
+    <a href="/hizmetler">Hizmet</a>
+    <a href="/fiyatlar">Fiyat</a>
+    <a href="/galeri">Galeri</a>
+    <a class="active" href="/iletisim">İletişim</a>
+  </nav>
+  <script src="main.js"></script>
+</body>
+</html>

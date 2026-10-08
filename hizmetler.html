@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sakız Palyaço | Hizmetler</title>
+  <meta name="description" content="Palyaço, kostümlü karakter, balon süsleme ve ikram standı.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@560;700;800&family=Outfit:wght@360;480;580;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wash" aria-hidden="true"></div>
+  <header class="nav" id="nav">
+    <a class="brand" href="/"><img src="assets/logo.png" alt="Sakız Palyaço"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menü</button>
+    <nav id="menu">
+      <a href="/">Ana</a>
+      <a class="active" href="/hizmetler">Hizmetler</a>
+      <a href="/fiyatlar">Fiyatlar</a>
+      <a href="/galeri">Galeri</a>
+      <a href="/iletisim">İletişim</a>
+      <a class="nav-cta" href="https://wa.me/905078378704" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </header>
+  <nav class="tabs" aria-label="Sekmeler">
+    <a href="/">Ana</a>
+    <a class="active" href="/hizmetler">Hizmetler</a>
+    <a href="/fiyatlar">Fiyatlar</a>
+    <a href="/galeri">Galeri</a>
+    <a href="/iletisim">İletişim</a>
+  </nav>
+  <main>
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">Hizmetler</p>
+        <h1>Etkinliğin eğlencesi ve görüntüsü aynı ekipte.</h1>
+        <p>Süsleme, gösteri ve ikramı ayrı ayrı aramanıza gerek kalmaz. Konsepti birlikte netleştirir, günün akışını buna göre kurarız.</p>
+      </div>
+      <div class="services">
+        <article class="glass">
+          <button type="button" data-gallery data-full="assets/galeri-maskot.jpg" data-caption="Kostümlü karakterler ve palyaço"><img src="assets/galeri-maskot.jpg" alt="Kostümlü karakterler ve palyaço"></button>
+          <div>
+            <h3>Palyaço ve karakterler</h3>
+            <p>Karşılama, oyun, yüz boyama ve sihir. Doğum gününe, okul şenliğine ve açılışa uygun kostümlü karakterler.</p>
+          </div>
+        </article>
+        <article class="glass">
+          <button type="button" data-gallery data-full="assets/galeri-buket.jpg" data-caption="Kişiye özel balon buketi"><img src="assets/galeri-buket.jpg" alt="Balon buketi"></button>
+          <div>
+            <h3>Balon süsleme</h3>
+            <p>Buket, kemer, sütun ve balon heykeli. Mekâna ve yaşa göre renk; kapıdan pastaya kadar tek görüntü.</p>
+          </div>
+        </article>
+        <article class="glass">
+          <button type="button" data-gallery data-full="assets/hizmet-pamuk.jpg" data-caption="Pamuk şeker standı"><img src="assets/hizmet-pamuk.jpg" alt="Pamuk şeker"></button>
+          <div>
+            <h3>İkram standı</h3>
+            <p>Pamuk şeker, patlamış mısır ve elma şekeri. Gösterinin yanında çocukların sıraya girdiği lezzet köşesi.</p>
+          </div>
+        </article>
+        <article class="glass">
+          <button type="button" data-gallery data-full="assets/galeri-acilis.jpg" data-caption="Balon kemerli açılış süslemesi"><img src="assets/galeri-acilis.jpg" alt="Balon kemerli açılış süslemesi"></button>
+          <div>
+            <h3>Özel gün ve kurum</h3>
+            <p>Açılış, baby shower, sünnet ve okul etkinliği. Kalabalık karşılama için gösteri ve süsleme birlikte planlanır.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img src="assets/logo.png" alt="">
+    <p>Sakız Palyaço · Çocuk etkinliği ve organizasyon</p>
+    <a href="tel:+905078378704">0507 837 87 04</a>
+  </footer>
+  <nav class="dock" aria-label="Mobil sekmeler">
+    <a href="/">Ana</a>
+    <a class="active" href="/hizmetler">Hizmet</a>
+    <a href="/fiyatlar">Fiyat</a>
+    <a href="/galeri">Galeri</a>
+    <a href="/iletisim">İletişim</a>
+  </nav>
+  <dialog id="lightbox" aria-label="Görsel">
+    <div class="viewer">
+      <button type="button" class="close" aria-label="Kapat">Kapat</button>
+      <button type="button" class="nav-shot prev" aria-label="Önceki">Önceki</button>
+      <button type="button" class="nav-shot next" aria-label="Sonraki">Sonraki</button>
+      <div class="stage"><img alt=""></div>
+      <div class="viewer-meta"><p class="caption"></p><p class="count"></p></div>
+    </div>
+  </dialog>
+  <script src="main.js"></script>
+</body>
+</html>

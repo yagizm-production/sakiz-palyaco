@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sakız Palyaço | Galeri</title>
+  <meta name="description" content="Sakız Palyaço saha fotoğrafları.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@560;700;800&family=Outfit:wght@360;480;580;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wash" aria-hidden="true"></div>
+  <header class="nav" id="nav">
+    <a class="brand" href="/"><img src="assets/logo.png" alt="Sakız Palyaço"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menü</button>
+    <nav id="menu">
+      <a href="/">Ana</a>
+      <a href="/hizmetler">Hizmetler</a>
+      <a href="/fiyatlar">Fiyatlar</a>
+      <a class="active" href="/galeri">Galeri</a>
+      <a href="/iletisim">İletişim</a>
+      <a class="nav-cta" href="https://wa.me/905078378704" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </header>
+  <nav class="tabs" aria-label="Sekmeler">
+    <a href="/">Ana</a>
+    <a href="/hizmetler">Hizmetler</a>
+    <a href="/fiyatlar">Fiyatlar</a>
+    <a class="active" href="/galeri">Galeri</a>
+    <a href="/iletisim">İletişim</a>
+  </nav>
+  <main>
+    <section class="section gallery-section">
+      <div class="section-head">
+        <p class="eyebrow">Galeri</p>
+        <h1>Sahadan kareler.</h1>
+        <p>Küçük karta tıklayın. Açılan görüntüde oklarla, klavyeyle veya kaydırarak gezin.</p>
+      </div>
+      <div class="gallery">
+        <button type="button" data-gallery data-full="assets/hero.jpg" data-caption="Salon süslemesi ve karakterler"><img src="assets/hero.jpg" alt="Salon süslemesi ve karakterler"></button>
+        <button type="button" data-gallery data-full="assets/galeri-gosteri.jpg" data-caption="Palyaço gösterisi"><img src="assets/galeri-gosteri.jpg" alt="Palyaço gösterisi"></button>
+        <button type="button" data-gallery data-full="assets/portre.jpg" data-caption="Sakız Palyaço"><img src="assets/portre.jpg" alt="Sakız Palyaço"></button>
+        <button type="button" data-gallery data-full="assets/galeri-maskot.jpg" data-caption="Maskot ve palyaço"><img src="assets/galeri-maskot.jpg" alt="Maskot ve palyaço"></button>
+        <button type="button" data-gallery data-full="assets/galeri-acik-hava.jpg" data-caption="Açık hava karakter karşılama"><img src="assets/galeri-acik-hava.jpg" alt="Açık hava karakter karşılama"></button>
+        <button type="button" data-gallery data-full="assets/galeri-karakter.jpg" data-caption="Balonlar ve kostümlü karakter"><img src="assets/galeri-karakter.jpg" alt="Balonlar ve kostümlü karakter"></button>
+        <button type="button" data-gallery data-full="assets/galeri-acilis.jpg" data-caption="Kırmızı balon kemer"><img src="assets/galeri-acilis.jpg" alt="Kırmızı balon kemer"></button>
+        <button type="button" data-gallery data-full="assets/galeri-buket.jpg" data-caption="Kişiye özel balon buketi"><img src="assets/galeri-buket.jpg" alt="Kişiye özel balon buketi"></button>
+        <button type="button" data-gallery data-full="assets/galeri-balon-heykel.jpg" data-caption="Balon heykeli ve palyaço"><img src="assets/galeri-balon-heykel.jpg" alt="Balon heykeli ve palyaço"></button>
+        <button type="button" data-gallery data-full="assets/hizmet-pamuk.jpg" data-caption="Pamuk şeker makinesi"><img src="assets/hizmet-pamuk.jpg" alt="Pamuk şeker makinesi"></button>
+        <button type="button" data-gallery data-full="assets/hizmet-pamuk-2.jpg" data-caption="Pamuk şeker hazırlığı"><img src="assets/hizmet-pamuk-2.jpg" alt="Pamuk şeker hazırlığı"></button>
+        <button type="button" data-gallery data-full="assets/hizmet-elma.jpg" data-caption="Elma şekeri"><img src="assets/hizmet-elma.jpg" alt="Elma şekeri"></button>
+        <button type="button" data-gallery data-full="assets/hizmet-misir.jpg" data-caption="Patlamış mısır standı"><img src="assets/hizmet-misir.jpg" alt="Patlamış mısır standı"></button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img src="assets/logo.png" alt="">
+    <p>Sakız Palyaço · Çocuk etkinliği ve organizasyon</p>
+    <a href="tel:+905078378704">0507 837 87 04</a>
+  </footer>
+  <nav class="dock" aria-label="Mobil sekmeler">
+    <a href="/">Ana</a>
+    <a href="/hizmetler">Hizmet</a>
+    <a href="/fiyatlar">Fiyat</a>
+    <a class="active" href="/galeri">Galeri</a>
+    <a href="/iletisim">İletişim</a>
+  </nav>
+  <dialog id="lightbox" aria-label="Galeri">
+    <div class="viewer">
+      <button type="button" class="close" aria-label="Kapat">Kapat</button>
+      <button type="button" class="nav-shot prev" aria-label="Önceki">Önceki</button>
+      <button type="button" class="nav-shot next" aria-label="Sonraki">Sonraki</button>
+      <div class="stage"><img alt=""></div>
+      <div class="viewer-meta"><p class="caption"></p><p class="count"></p></div>
+    </div>
+  </dialog>
+  <script src="main.js"></script>
+</body>
+</html>

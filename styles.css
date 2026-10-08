@@ -39,7 +39,34 @@ body {
 body > *:not(.wash) { position: relative; z-index: 1; }
 img { max-width: 100%; display: block; }
 html, body { overflow-x: hidden; }
-.dock { display: none; }
+.nav nav a.active, .tabs a.active, .dock a.active {
+  color: var(--pink-deep);
+}
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  padding: 14px 6vw 0;
+  scrollbar-width: none;
+}
+.tabs a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+}
+.tabs a.active {
+  background: var(--pink);
+  color: white;
+  border-color: transparent;
+}
+.home { padding: 28px 6vw 12px; }
+.home-logo { width: min(220px, 46vw); margin: 8px auto 22px; }
+.home h1, .section h1 { font-size: clamp(30px, 4vw, 48px); margin: 0 0 12px; }
 a { color: inherit; }
 button, input, select, textarea { font: inherit; }
 
@@ -396,7 +423,9 @@ dialog::backdrop { background: rgba(58, 24, 48, 0.62); backdrop-filter: blur(8px
   .hero-card { border-radius: 22px; }
   .hero-card img { height: 240px; object-fit: cover; object-position: center; }
 
-  .strip { padding: 10px 16px; gap: 8px; scrollbar-width: none; }
+  .tabs { padding: 10px 16px 0; }
+  .home { padding: 16px 16px 0; }
+  .dock a.active { background: rgba(226, 24, 120, 0.12); color: var(--pink-deep); }
   .section { padding: 36px 16px; }
   .section-head { margin-bottom: 16px; }
 
